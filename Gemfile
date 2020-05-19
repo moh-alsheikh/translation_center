@@ -15,11 +15,12 @@ source "http://rubygems.org"
 # development dependencies will be added by default to the :development group.
 gemspec
  gem 'devise'
+ gem 'rails', "6.0.2.1"
 
-=begin
+
 gem 'jquery-rails'
 gem 'jquery-ui-rails'
-gem 'mysql2'
+gem 'pg'
 gem 'haml'
 gem 'haml-rails'
 gem 'acts_as_votable'
@@ -27,17 +28,17 @@ gem 'ya2yaml'
 # gem 'linecache19', :git => 'git://github.com/mark-moseley/linecache'
 gem 'devise'
 gem 'font-awesome-rails'
-gem 'audited-activerecord'
+gem 'audited'
 
 
 group :development do
-  gem 'ruby-debug-base19x', '~> 0.11.30.pre4'
-  gem 'ruby-debug19'
-  gem 'debugger'
+  # gem 'ruby-debug-base19x', '~> 0.11.30.pre4'
+  # gem 'ruby-debug19'
+  # gem 'debugger'
   gem 'better_errors'
   gem 'binding_of_caller'
 end
-=end
+
 
 # Declare any dependencies that are still in development here instead of in
 # your gemspec. These might include edge Rails or gems from your path or

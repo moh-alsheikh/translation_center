@@ -22,7 +22,9 @@ module TranslationCenter
 
   def self.included(base)
     base.class_eval do
-      alias_method_chain :translate, :adding if(TranslationCenter::CONFIG['enabled'])
+      # alias_method_chain :translate, :adding if(TranslationCenter::CONFIG['enabled'])
+      alias_method :translate_without_adding, :translate
+      alias_method :translate, :translate_with_adding
     end
   end
 

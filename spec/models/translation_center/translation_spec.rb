@@ -70,7 +70,7 @@ module TranslationCenter
         expect(en_translation.status).to eq(Translation::ACCEPTED)
       end
 
-      it "should unaccept a translation" do        
+      it "should unaccept a translation" do
         en_translation.accept
 
         expect(en_translation.status).to eq(Translation::ACCEPTED)
